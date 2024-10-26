@@ -1,15 +1,9 @@
 "use client";
 
 import React from "react";
+import { DecoVideoSvg } from "../BackgroundSvg";
 import Button from "../Button";
-import {
-  DecoVideoSvg,
-  DoneIcon,
-  GreenIcon,
-  PlayIcon,
-  RedIcon,
-  YellowIcon,
-} from "../Icons";
+import { DoneIcon, GreenIcon, PlayIcon, RedIcon, YellowIcon } from "../Icons";
 
 interface WhyJoinUsPageProps {}
 
