@@ -1,6 +1,7 @@
 import CollectibleSneakersPage from "@/components/collectibleSneakers/CollectibleSneakersPage";
 import Header from "@/components/header/Header";
 import TheBestOfTheBestPage from "@/components/theBestOfTheBest/TheBestOfTheBestPage";
+import WhyJoinUsPage from "@/components/whyJoinUs/WhyJoinUsPage";
 
 export default function Home() {
   return (
@@ -11,6 +12,9 @@ export default function Home() {
       </div>
       <div className="bg-blue w-full">
         <TheBestOfTheBestPage />
+      </div>
+      <div className="bg-yellow w-full">
+        <WhyJoinUsPage />
       </div>
     </div>
   );
