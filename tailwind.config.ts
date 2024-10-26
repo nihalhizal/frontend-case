@@ -12,7 +12,8 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         brown: "#78350F",
-        yellow: "#FFFBEB"
+        yellow: "#FFFBEB",
+        blue: "#0F172A"
       },
     },
     screens: {
