@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import GrowYourCollectionPage from "@/components/growYourCollection/GrowYourCollectionPage";
 import WorldMapPage from "@/components/worldMap/WorldMapPage";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -25,6 +26,9 @@ export default function Home() {
       </div>
       <div className="bg-brown w-full">
         <WorldMapPage />
+      </div>
+      <div className="bg-blue w-full">
+        <Footer />
       </div>
     </div>
   );
