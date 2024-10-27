@@ -4,6 +4,7 @@ import React from "react";
 import Button from "../Button";
 import { useQuery } from "@tanstack/react-query";
 import Cards from "./Cards";
+import { BackLightsSvg } from "../BackgroundSvg";
 
 interface TheBestOfTheBestPageProps {}
 
@@ -35,32 +36,8 @@ const TheBestOfTheBestPage: React.FC<TheBestOfTheBestPageProps> = ({}) => {
           Sign up now
         </Button>
       </div>
-      <div>
-        <img
-          src="/Square1.png"
-          alt="Square1"
-          className="absolute -bottom-[960px] left-12"
-        />
-        <img
-          src="/Square2.png"
-          alt="Square2"
-          className="absolute -bottom-[680px] left-[500px]"
-        />
-        <img
-          src="/Square3.png"
-          alt="Square3"
-          className="absolute -bottom-[940px] right-[505px]"
-        />
-        <img
-          src="/Square4.png"
-          alt="Square4"
-          className="absolute -bottom-[1020px] right-44"
-        />
-        <img
-          src="/Square5.png"
-          alt="Square5"
-          className="absolute -bottom-[800px] right-10"
-        />
+      <div className="pt-28 absolute right-6">
+        <BackLightsSvg />
       </div>
       <div className="flex w-full justify-between gap-12 pt-20 relative">
         {data?.data?.map(
