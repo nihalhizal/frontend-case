@@ -57,10 +57,10 @@ const Footer: React.FC<FooterProps> = ({}) => {
           <div className="flex flex-col gap-4">
             <div className="font-medium">Get the App</div>
             <button>
-              <img src="/Apple.svg" alt="icon" />
+              <img src="/AppStore.svg" alt="AppStore" />
             </button>
             <button>
-              <img src="/GooglePlay.svg" alt="icon" />
+              <img src="/GooglePlay.svg" alt="GooglePlay" />
             </button>
             <div className="font-medium">Follow Us</div>
             <div className="flex gap-4">
