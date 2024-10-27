@@ -7,6 +7,7 @@ type ButtonProps = {
   size?: "small" | "medium" | "large";
   className?: string;
   icon?: ReactNode;
+  endIcon?: ReactNode;
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -16,6 +17,7 @@ const Button: React.FC<ButtonProps> = ({
   size = "medium",
   className = "",
   icon,
+  endIcon,
 }) => {
   const getButtonClasses = () => {
     let classes = "btn ";
@@ -37,9 +39,10 @@ const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       disabled={disabled}
     >
-      <div className="flex gap-2 items-center">
+      <div className="flex gap-4 items-center">
         {icon && <span>{icon}</span>}
         {children}
+        {endIcon && <span>{endIcon}</span>}
       </div>
     </button>
   );
