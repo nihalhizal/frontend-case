@@ -55,7 +55,7 @@ const sliderCards: SliderCards = [
     userDetail: "Team Lead",
   },
   {
-    icon: <img src="/Shells.png" alt="Shells" />,
+    icon: <img src="/Shells.svg" alt="Shells" />,
     title: "SHELLS",
     text: "Aliquet ridiculus mi porta habitant vulputate rhoncus, mattis amet enim. Sit purus venenatis velit semper lectus sed ornare quam nulla.",
     userImage: (
