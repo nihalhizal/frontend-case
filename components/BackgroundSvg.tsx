@@ -148,3 +148,33 @@ export const BackLightsSvg: React.FC<React.SVGProps<SVGSVGElement>> = ({}) => {
     </svg>
   );
 };
+
+export const RectangleSvg: React.FC<React.SVGProps<SVGSVGElement>> = ({}) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1428"
+      height="806"
+      viewBox="0 0 1428 806"
+      fill="none"
+    >
+      <path d="M1428 265.472V0L0 806H1428V265.472Z" fill="#FEF3C7" />
+    </svg>
+  );
+};
+
+export const YellowSquareSvg: React.FC<
+  React.SVGProps<SVGSVGElement>
+> = ({}) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="367"
+      height="372"
+      viewBox="0 0 367 372"
+      fill="none"
+    >
+      <rect x="7.62939e-06" width="367" height="372" rx="50" fill="#FBBF24" />
+    </svg>
+  );
+};

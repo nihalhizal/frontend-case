@@ -1,6 +1,7 @@
 "use client";
 
 import React, { ReactNode } from "react";
+import { RectangleSvg, YellowSquareSvg } from "../BackgroundSvg";
 import Button from "../Button";
 import {
   RectangleTrophyIcon,
@@ -52,8 +53,21 @@ const CollectibleSneakersPage: React.FC<
   CollectibleSneakersPageProps
 > = ({}) => {
   return (
-    <div>
-      <div className="flex w-full p-20 gap-20 pt-36">
+    <div className="pt-32">
+      <div className="absolute w-full overflow-hidden">
+        <RectangleSvg />
+      </div>
+      <div className="absolute right-32">
+        <YellowSquareSvg />
+      </div>
+      <div className="absolute right-4 w-[584px] h-[466px] -mt-28">
+        <img
+          src="/Sneaker.png"
+          alt="Sneaker"
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="flex w-full px-20 py-10 gap-20">
         <div className="flex flex-col w-[714px] gap-12">
           <div className="font-extrabold text-7xl text-[#0F172A]">
             Collectible Sneakers
@@ -63,7 +77,7 @@ const CollectibleSneakersPage: React.FC<
             suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum ultrices
             amet.
           </div>
-          <div className="flex font-medium text-base text-brown gap-4 relative">
+          <div className="flex font-medium text-base text-brown gap-4">
             <Button
               onClick={() => {}}
               size="medium"
@@ -81,25 +95,8 @@ const CollectibleSneakersPage: React.FC<
             </Button>
           </div>
         </div>
-        <div>
-          <img
-            src="/Rectangle.png"
-            alt="Rectangle"
-            className="absolute -bottom-80 right-0"
-          />
-          <img
-            src="/YellowSquare.png"
-            alt="Yellow Square"
-            className="absolute top-52 right-36"
-          />
-          <img
-            src="/Sneaker.png"
-            alt="Sneaker"
-            className="absolute top-40 right-20"
-          />
-        </div>
       </div>
-      <div className="flex justify-between relative p-20 gap-20 pt-40">
+      <div className="flex justify-between relative px-20 gap-20 pt-40 pb-24">
         {rowGroup.map((row: any) => (
           <div key={row.key} className="flex flex-col gap-2.5">
             <div className="relative">
