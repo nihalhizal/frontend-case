@@ -62,7 +62,7 @@ const GrowYourCollectionPage: React.FC<GrowYourCollectionPageProps> = ({}) => {
           proin neque placerat at bibendum quam tellus.
         </div>
       </div>
-      <div className="pt-8 absolute">
+      <div className="absolute w-full overflow-hidden">
         <WavesSvg />
       </div>
       <div className="flex gap-20 px-20">
