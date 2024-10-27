@@ -15,6 +15,10 @@ const config: Config = {
         yellow: "#FFFBEB",
         blue: "#0F172A"
       },
+      boxShadow: {
+        'custom-light': '0px 0px 15px 0px rgba(0, 0, 0, 0.07)',
+        'custom-dark': '0px 25px 50px -12px rgba(0, 0, 0, 0.25)',
+      },
     },
     screens: {
       xs: { max: "639px" },
