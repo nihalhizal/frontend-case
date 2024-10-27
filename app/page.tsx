@@ -1,6 +1,6 @@
 import BecauseTheyLoveUsPage from "@/components/becauseTheyLoveUs/BecauseTheyLoveUsPage";
 import CollectibleSneakersPage from "@/components/collectibleSneakers/CollectibleSneakersPage";
-import Header from "@/components/header/Header";
+import Header from "@/components/Header";
 import TheBestOfTheBestPage from "@/components/theBestOfTheBest/TheBestOfTheBestPage";
 import WhyJoinUsPage from "@/components/whyJoinUs/WhyJoinUsPage";
 import "slick-carousel/slick/slick.css";
