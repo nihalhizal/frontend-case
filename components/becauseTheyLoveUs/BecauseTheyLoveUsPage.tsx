@@ -114,7 +114,9 @@ const BecauseTheyLoveUsPage: React.FC<BecauseTheyLoveUsPageProps> = ({}) => {
   return (
     <div>
       <div className="flex p-20 justify-between items-center">
-        <div className="font-extrabold text-6xl">Because they love us</div>
+        <div className="text-[#0F172A] font-extrabold text-6xl">
+          Because they love us
+        </div>
         <div className="flex gap-6">
           <button
             className="border-2 rounded-full p-4 border-brown"
