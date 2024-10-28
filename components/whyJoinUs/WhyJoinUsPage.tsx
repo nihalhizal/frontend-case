@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { DecoVideoSvg } from "../BackgroundSvg";
+import { DecoVideoSvg, MobileDecoVideoSvg } from "../BackgroundSvg";
 import Button from "../Button";
 import { DoneIcon, GreenIcon, PlayIcon, RedIcon, YellowIcon } from "../Icons";
 
@@ -29,13 +29,16 @@ const listItem: ListItem = [
 const WhyJoinUsPage: React.FC<WhyJoinUsPageProps> = ({}) => {
   return (
     <div>
-      <div className="pt-8 absolute right-10">
+      <div className="pt-8 absolute right-10 xs:hidden">
         <DecoVideoSvg />
       </div>
-      <div className="p-20">
-        <div className="flex justify-between bg-white p-20 rounded-3xl w-[1280px] h-[496px] shadow-custom-2">
-          <div className="flex flex-col gap-6">
-            <div className="text-[#0F172A] font-extrabold text-[56px]">
+      <div className="pt-[360px] absolute right-0 hidden xs:block">
+        <MobileDecoVideoSvg />
+      </div>
+      <div className="p-20 xs:p-4">
+        <div className="flex justify-between bg-white p-20 rounded-3xl w-[1280px] h-[496px] shadow-custom-2 xs:flex-col xs:p-4 xs:w-[393px] xs:h-[689px]">
+          <div className="flex flex-col gap-6 xs:pt-10">
+            <div className="text-[#0F172A] font-extrabold text-[56px] xs:text-[32px] xs:text-center">
               Why join us
             </div>
             <div className="flex flex-col gap-2">
@@ -46,7 +49,7 @@ const WhyJoinUsPage: React.FC<WhyJoinUsPageProps> = ({}) => {
                 </div>
               ))}
             </div>
-            <div>
+            <div className="xs:text-center">
               <Button
                 onClick={() => {}}
                 size="medium"
@@ -62,7 +65,7 @@ const WhyJoinUsPage: React.FC<WhyJoinUsPageProps> = ({}) => {
               <YellowIcon />
               <GreenIcon />
             </div>
-            <div className="flex flex-col bg-white border-4 border-white rounded-b-2xl w-[520px] h-[309px] shadow-custom-dark">
+            <div className="flex flex-col bg-white border-4 border-white rounded-b-2xl w-[520px] h-[309px] shadow-custom-dark xs:w-[361px] xs:h-[235px]">
               <div className="relative w-full h-full">
                 <img
                   src="/Video.jpeg"

@@ -4,7 +4,7 @@ import React from "react";
 import Button from "../Button";
 import { useQuery } from "@tanstack/react-query";
 import Cards from "./Cards";
-import { BackLightsSvg } from "../BackgroundSvg";
+import { BackLightsSvg, MobileBackLightsSvg } from "../BackgroundSvg";
 
 interface TheBestOfTheBestPageProps {}
 
@@ -23,23 +23,28 @@ const TheBestOfTheBestPage: React.FC<TheBestOfTheBestPageProps> = ({}) => {
   });
 
   return (
-    <div className="flex flex-col p-20">
-      <div className="flex w-full justify-between relative">
-        <div className="font-extrabold text-6xl text-white">
+    <div className="flex flex-col p-20 xs:p-4 xs:py-10">
+      <div className="flex w-full justify-between relative xs:flex-col xs:text-center xs:gap-6">
+        <div className="font-extrabold text-6xl text-white xs:font-bold xs:text-3xl">
           The best of the best
         </div>
-        <Button
-          onClick={() => {}}
-          size="large"
-          className="bg-transparent text-[#FFFFFF] font-bold border-2 border-[#FFFFFF]"
-        >
-          Sign up now
-        </Button>
+        <div>
+          <Button
+            onClick={() => {}}
+            size="large"
+            className="bg-transparent text-[#FFFFFF] font-bold border-2 border-[#FFFFFF]"
+          >
+            Sign up now
+          </Button>
+        </div>
       </div>
-      <div className="pt-28 absolute right-6">
+      <div className="pt-28 absolute right-6 xs:hidden">
         <BackLightsSvg />
       </div>
-      <div className="flex w-full justify-between gap-12 pt-20 relative">
+      <div className="hidden xs:block pt-96 absolute">
+        <MobileBackLightsSvg />
+      </div>
+      <div className="flex w-full justify-between gap-12 pt-20 relative xs:flex-col xs:pt-10">
         {data?.data?.map(
           ({ title, text, imageUrl }: CardData, index: number) => (
             <Cards title={title} text={text} imageUrl={imageUrl} key={index} />

@@ -6,8 +6,8 @@ interface WorldMapPageProps {}
 
 const WorldMapPage: React.FC<WorldMapPageProps> = ({}) => {
   return (
-    <div className="pt-20 pb-80">
-      <div className="relative pl-52">
+    <div className="pt-20 pb-80 xs:pt-40">
+      <div className="relative pl-52 xs:pl-20 xs:pb-24">
         <div className="relative flex flex-col bg-white border-4 border-white rounded-2xl w-[256px] h-[200px] shadow-custom-light">
           <div className="w-full h-full">
             <img
@@ -23,17 +23,33 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({}) => {
       </div>
       <div className="flex items-center justify-center">
         <div className="flex flex-col gap-2 relative items-center justify-center">
-          <div className="text-white font-extrabold text-8xl">11,658,467</div>
-          <div className="text-white font-extrabold text-6xl">
+          <div className="text-white font-extrabold text-8xl xs:text-5xl">
+            11,658,467
+          </div>
+          <div className="text-white font-extrabold text-6xl xs:text-3xl">
             Shoes Collected
           </div>
         </div>
         <img
           src="/WorldMap.svg"
           alt="WorldMap"
-          className="absolute opacity-50 pt-10"
+          className="absolute opacity-50 pt-10 xs:hidden"
         />
-        <img src="/Ellipses.svg" alt="Ellipses" className="absolute pl-24" />
+        <img
+          src="/MobileWorldMap.svg"
+          alt="MobileWorldMap"
+          className="absolute opacity-50 pt-10 pl-14 hidden xs:block"
+        />
+        <img
+          src="/Ellipses.svg"
+          alt="Ellipses"
+          className="absolute pl-24 xs:hidden"
+        />
+        <img
+          src="/MobileEllipses.svg"
+          alt="MobileEllipses"
+          className="absolute pl-64 hidden xs:block"
+        />
       </div>
     </div>
   );

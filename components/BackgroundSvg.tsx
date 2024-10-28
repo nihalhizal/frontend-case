@@ -178,3 +178,183 @@ export const YellowSquareSvg: React.FC<
     </svg>
   );
 };
+
+export const MobileYellowSquareSvg: React.FC<
+  React.SVGProps<SVGSVGElement>
+> = ({}) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="272"
+      height="276"
+      viewBox="0 0 272 276"
+      fill="none"
+    >
+      <rect x="7.62939e-06" width="272" height="276" rx="50" fill="#FBBF24" />
+    </svg>
+  );
+};
+
+export const MobileBackLightsSvg: React.FC<
+  React.SVGProps<SVGSVGElement>
+> = ({}) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="393"
+      height="1013"
+      viewBox="0 0 393 1013"
+      fill="none"
+    >
+      <rect
+        opacity="0.75"
+        x="345.273"
+        y="839.697"
+        width="173.01"
+        height="173.01"
+        rx="50"
+        transform="rotate(90 345.273 839.697)"
+        fill="#15803D"
+      />
+      <rect
+        opacity="0.75"
+        x="150.639"
+        y="758.41"
+        width="150.638"
+        height="150.638"
+        rx="30"
+        transform="rotate(90 150.639 758.41)"
+        fill="#A21CAF"
+      />
+      <rect
+        opacity="0.75"
+        x="150.637"
+        y="563.775"
+        width="96.9453"
+        height="96.9453"
+        rx="30"
+        transform="rotate(90 150.637 563.775)"
+        fill="#B45309"
+      />
+      <rect
+        opacity="0.75"
+        x="393"
+        y="340.801"
+        width="120.063"
+        height="120.063"
+        rx="50"
+        transform="rotate(90 393 340.801)"
+        fill="#0369A1"
+      />
+      <rect
+        opacity="0.75"
+        x="238.633"
+        width="202.094"
+        height="202.094"
+        rx="50"
+        transform="rotate(90 238.633 0)"
+        fill="#BE185D"
+      />
+    </svg>
+  );
+};
+
+export const MobileDecoVideoSvg: React.FC<
+  React.SVGProps<SVGSVGElement>
+> = ({}) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="393"
+      height="386"
+      viewBox="0 0 393 386"
+      fill="none"
+    >
+      <rect
+        x="-23.8691"
+        y="290.862"
+        width="411.341"
+        height="134.545"
+        transform="rotate(-45 -23.8691 290.862)"
+        fill="#FDE68A"
+      />
+      <rect
+        opacity="0.75"
+        x="258.885"
+        y="279.782"
+        width="45.6851"
+        height="45.6851"
+        rx="22.8426"
+        fill="#A21CAF"
+      />
+      <rect
+        opacity="0.75"
+        x="10.0879"
+        y="97.6587"
+        width="55.563"
+        height="55.563"
+        rx="27.7815"
+        fill="#B45309"
+      />
+      <rect
+        opacity="0.75"
+        x="292.838"
+        y="27.8965"
+        width="36.4246"
+        height="37.042"
+        rx="18.2123"
+        fill="#0369A1"
+      />
+      <rect
+        opacity="0.75"
+        x="281.727"
+        y="231.01"
+        width="134.586"
+        height="134.586"
+        rx="50"
+        fill="#BE185D"
+      />
+    </svg>
+  );
+};
+
+export const MobileYellowBgSvg: React.FC<
+  React.SVGProps<SVGSVGElement>
+> = ({}) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="425"
+      height="278"
+      viewBox="0 0 425 278"
+      fill="none"
+    >
+      <rect y="0.203613" width="425" height="277" fill="#FDE68A" />
+    </svg>
+  );
+};
+
+export const MobileWavesSvg: React.FC<React.SVGProps<SVGSVGElement>> = ({}) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="450"
+      height="685"
+      viewBox="0 0 450 685"
+      fill="none"
+    >
+      <path
+        d="M208 507.577C108.284 488.554 37 532.041 0 602.617V684.204H1440V3.78465C1397.38 -12.3743 1346.49 30.0562 1326.38 53.2913C1292.55 94.4808 1203.11 173.375 1115.99 159.433C1028.87 145.492 954.268 225.178 927.858 266.764C891.557 322.475 785.577 419.403 652.063 361.42C528 307.543 441.5 391.62 395.823 433.898C358.736 466.903 313.484 527.7 208 507.577Z"
+        fill="#FDE68A"
+      />
+      <path
+        d="M208 538.564C108.284 522.879 37 558.736 0 616.93V684.204H1440V123.156C1397.38 109.832 1346.49 144.819 1326.38 163.978C1292.55 197.941 1203.11 262.994 1115.99 251.498C1028.87 240.003 954.268 305.709 927.858 339.999C891.557 385.936 785.577 465.859 652.063 418.049C528 373.624 441.5 442.95 395.823 477.811C358.736 505.026 313.484 555.157 208 538.564Z"
+        fill="#FEF3C7"
+      />
+      <path
+        d="M208 588.144C108.284 577.798 37 601.448 0 639.832V684.204H1440V314.151C1397.38 305.363 1346.49 328.439 1326.38 341.076C1292.55 363.477 1203.11 406.384 1115.99 398.802C1028.87 391.22 954.268 434.558 927.858 457.175C891.557 487.474 785.577 540.189 652.063 508.655C528 479.353 441.5 525.079 395.823 548.073C358.736 566.022 313.484 599.088 208 588.144Z"
+        fill="#78350F"
+      />
+    </svg>
+  );
+};

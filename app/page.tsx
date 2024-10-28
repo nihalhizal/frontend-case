@@ -19,7 +19,12 @@ export default function Home() {
       <div className="bg-blue w-full">
         <TheBestOfTheBestPage />
       </div>
-      <div className="bg-gradient-to-b from-[#FFFBEB] to-[#FFFFFF] w-full pb-40">
+      <div className="xs:hidden bg-gradient-to-b from-[#FFFBEB] to-[#FFFFFF] w-full pb-40">
+        <WhyJoinUsPage />
+        <BecauseTheyLoveUsPage />
+        <GrowYourCollectionPage />
+      </div>
+      <div className="hidden xs:block bg-white pb-20">
         <WhyJoinUsPage />
         <BecauseTheyLoveUsPage />
         <GrowYourCollectionPage />

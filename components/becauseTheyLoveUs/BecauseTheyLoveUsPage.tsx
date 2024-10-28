@@ -1,7 +1,7 @@
 "use client";
 
 import React, { ReactNode, useRef } from "react";
-import { YellowBgSvg } from "../BackgroundSvg";
+import { MobileYellowBgSvg, YellowBgSvg } from "../BackgroundSvg";
 import {
   ArrowLeftIcon,
   ArrowRightIcon,
@@ -109,15 +109,26 @@ const BecauseTheyLoveUsPage: React.FC<BecauseTheyLoveUsPageProps> = ({}) => {
     centerMode: true,
     centerPadding: "100px",
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "30px",
+        },
+      },
+    ],
   };
 
   return (
     <div>
-      <div className="flex p-20 justify-between items-center">
-        <div className="text-[#0F172A] font-extrabold text-6xl">
+      <div className="flex p-20 justify-between items-center xs:p-4 xs:pt-20 xs:justify-center">
+        <div className="text-[#0F172A] font-extrabold text-6xl xs:font-bold xs:text-3xl">
           Because they love us
         </div>
-        <div className="flex gap-6">
+        <div className="flex gap-6 xs:hidden">
           <button
             className="border-2 rounded-full p-4 border-brown"
             onClick={() => sliderRef.current.slickPrev()}
@@ -133,13 +144,16 @@ const BecauseTheyLoveUsPage: React.FC<BecauseTheyLoveUsPageProps> = ({}) => {
         </div>
       </div>
       <div className="relative">
-        <div className="flex justify-center absolute inset-0">
+        <div className="flex justify-center absolute inset-0 xs:hidden">
           <YellowBgSvg />
+        </div>
+        <div className="flex justify-center absolute inset-0 hidden xs:block">
+          <MobileYellowBgSvg />
         </div>
         <div className="relative">
           <Slider ref={sliderRef} {...sliderSettings}>
             {sliderCards.map((item: any, index: number) => (
-              <div key={index} className="p-10">
+              <div key={index} className="p-10 xs:p-2 xs:pb-20">
                 <SliderCards
                   icon={item.icon}
                   title={item.title}

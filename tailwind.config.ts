@@ -13,7 +13,8 @@ const config: Config = {
         foreground: "var(--foreground)",
         brown: "#78350F",
         yellow: "#FFFBEB",
-        blue: "#0F172A"
+        blue: "#0F172A",
+        darkYellow: "#FEF3C7"
       },
       boxShadow: {
         'custom-light': '0px 0px 15px 0px rgba(0, 0, 0, 0.07)',

@@ -1,7 +1,11 @@
 "use client";
 
 import React, { ReactNode } from "react";
-import { RectangleSvg, YellowSquareSvg } from "../BackgroundSvg";
+import {
+  MobileYellowSquareSvg,
+  RectangleSvg,
+  YellowSquareSvg,
+} from "../BackgroundSvg";
 import Button from "../Button";
 import {
   RectangleTrophyIcon,
@@ -49,23 +53,25 @@ const CollectibleSneakersPage: React.FC<
   CollectibleSneakersPageProps
 > = ({}) => {
   return (
-    <div className="pt-32">
-      <div className="absolute w-full overflow-hidden">
-        <RectangleSvg />
+    <div className="pt-32 xs:pt-6">
+      <div className="xs:hidden">
+        <div className="absolute w-full overflow-hidden">
+          <RectangleSvg />
+        </div>
+        <div className="absolute right-32">
+          <YellowSquareSvg />
+        </div>
+        <div className="absolute right-4 w-[584px] h-[466px] -mt-28">
+          <img
+            src="/Sneaker.png"
+            alt="Sneaker"
+            className="w-full h-full object-cover"
+          />
+        </div>
       </div>
-      <div className="absolute right-32">
-        <YellowSquareSvg />
-      </div>
-      <div className="absolute right-4 w-[584px] h-[466px] -mt-28">
-        <img
-          src="/Sneaker.png"
-          alt="Sneaker"
-          className="w-full h-full object-cover"
-        />
-      </div>
-      <div className="flex w-full px-20 py-10 gap-20 relative">
+      <div className="flex w-full px-20 py-10 gap-20 relative xs:p-4 xs:text-center">
         <div className="flex flex-col w-[714px] gap-12">
-          <div className="font-extrabold text-7xl text-[#0F172A]">
+          <div className="font-extrabold text-7xl text-[#0F172A] xs:text-[56px]">
             Collectible Sneakers
           </div>
           <div className="text-lg">
@@ -92,15 +98,30 @@ const CollectibleSneakersPage: React.FC<
           </div>
         </div>
       </div>
-      <div className="flex justify-between relative px-20 gap-20 pt-40 pb-24">
+      <div className="hidden xs:block pb-[314px] w-full">
+        <div className="absolute w-full overflow-hidden top-0">
+          <RectangleSvg />
+        </div>
+        <div className="absolute pt-8 left-1/2 transform -translate-x-1/2">
+          <MobileYellowSquareSvg />
+        </div>
+        <div className="absolute w-[420px] h-[320px] right-0">
+          <img
+            src="/Sneaker.png"
+            alt="Sneaker"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+      <div className="flex justify-between relative px-20 gap-20 pt-40 pb-24 xs:flex-col xs:bg-darkYellow xs:p-4 xs:py-20">
         {rowGroup.map((row: any, index: any) => (
-          <div key={index} className="flex flex-col gap-3">
+          <div key={index} className="flex flex-col gap-3 xs:items-center">
             <div className="relative">
               <span className="absolute top-0 left-6">{row.rectangleIcon}</span>
               <span>{row.icon}</span>
             </div>
             <div className="font-medium text-xl">{row.title}</div>
-            <div className="text-lg">{row.text}</div>
+            <div className="text-lg xs:text-center">{row.text}</div>
           </div>
         ))}
       </div>
