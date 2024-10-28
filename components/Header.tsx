@@ -1,31 +1,31 @@
 "use client";
 
 import Button from "./Button";
+import { useQuery } from "@tanstack/react-query";
 
 interface HeaderProps {}
 
-interface Button {
+interface ButtonsData {
   key: string;
   label: string;
 }
 
-type ButtonsGroup = Button[];
-
-const buttonsGroup: ButtonsGroup = [
-  { key: "products", label: "Products" },
-  { key: "solutions", label: "Solutions" },
-  { key: "pricing", label: "Pricing" },
-  { key: "resources", label: "Resources" },
-  { key: "logIn", label: "Log In" },
-];
-
 const Header: React.FC<HeaderProps> = ({}) => {
+  //queries
+  const { data } = useQuery({
+    queryKey: ["buttonsData"],
+    queryFn: () =>
+      fetch("http://localhost:3000/api/header-buttons").then((res) =>
+        res.json()
+      ),
+  });
+
   return (
     <div className="flex w-full px-20 py-6 justify-between">
       <div className="font-bold text-3xl text-brown">Collers</div>
       <div className="flex font-medium text-base text-brown gap-4">
-        {buttonsGroup.map((button: any) => (
-          <button key={button.key}>{button.label}</button>
+        {data?.data?.map(({ key, label }: ButtonsData) => (
+          <button key={key}>{label}</button>
         ))}
         <Button
           onClick={() => {}}

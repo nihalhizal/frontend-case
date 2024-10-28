@@ -1,5 +1,6 @@
 "use client";
 
+import { useQuery } from "@tanstack/react-query";
 import {
   FacebookIcon,
   InstagramIcon,
@@ -11,43 +12,27 @@ import {
 
 interface FooterProps {}
 
-interface Column {
+interface ColumnsData {
   title: string;
   items: string[];
 }
 
-type ColumnItem = Column[];
-
-const columnItem: ColumnItem = [
-  {
-    title: "Product",
-    items: ["Pricing", "Overview", "Browse", "Accessibility", "Five"],
-  },
-  {
-    title: "Solutions",
-    items: ["Brainstorming", "Ideation", "Wireframing", "Research", "Design"],
-  },
-  {
-    title: "Support",
-    items: [
-      "Contact Us",
-      "Developers",
-      "Documentation",
-      "Integrations",
-      "Reports",
-    ],
-  },
-];
-
 const Footer: React.FC<FooterProps> = ({}) => {
+  //queries
+  const { data } = useQuery({
+    queryKey: ["columnsData"],
+    queryFn: () =>
+      fetch("http://localhost:3000/api/footer-items").then((res) => res.json()),
+  });
+
   return (
     <div>
       <div className="flex w-full p-20">
         <div className="flex w-full justify-between text-[#E2E8F0]">
-          {columnItem.map((column: any, columnIndex: number) => (
-            <div key={columnIndex} className="flex flex-col gap-4">
-              <div className="font-medium">{column.title}</div>
-              {column.items.map((item: any, itemIndex: number) => (
+          {data?.data?.map(({ title, items }: ColumnsData, index: number) => (
+            <div key={index} className="flex flex-col gap-4">
+              <div className="font-medium">{title}</div>
+              {items.map((item: any, itemIndex: number) => (
                 <div key={itemIndex}>
                   <div>{item}</div>
                 </div>
@@ -64,11 +49,21 @@ const Footer: React.FC<FooterProps> = ({}) => {
             </button>
             <div className="font-medium">Follow Us</div>
             <div className="flex gap-4">
-              <YoutubeIcon />
-              <FacebookIcon />
-              <TwitterIcon />
-              <InstagramIcon />
-              <LinkedinIcon />
+              <button>
+                <YoutubeIcon />
+              </button>
+              <button>
+                <FacebookIcon />
+              </button>
+              <button>
+                <TwitterIcon />
+              </button>
+              <button>
+                <InstagramIcon />
+              </button>
+              <button>
+                <LinkedinIcon />
+              </button>
             </div>
           </div>
         </div>
