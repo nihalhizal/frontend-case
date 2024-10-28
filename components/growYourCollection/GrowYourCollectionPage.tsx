@@ -65,7 +65,7 @@ const GrowYourCollectionPage: React.FC<GrowYourCollectionPageProps> = ({}) => {
       <div className="absolute w-full overflow-hidden">
         <WavesSvg />
       </div>
-      <div className="flex gap-20 px-20">
+      <div className="flex gap-20 px-20 relative">
         <div className="flex flex-col gap-8 w-[16rem]">
           <Button
             onClick={() => {}}

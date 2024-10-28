@@ -24,7 +24,7 @@ const TheBestOfTheBestPage: React.FC<TheBestOfTheBestPageProps> = ({}) => {
 
   return (
     <div className="flex flex-col p-20">
-      <div className="flex w-full justify-between">
+      <div className="flex w-full justify-between relative">
         <div className="font-extrabold text-6xl text-white">
           The best of the best
         </div>

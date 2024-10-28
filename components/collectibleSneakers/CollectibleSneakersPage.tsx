@@ -16,7 +16,6 @@ import {
 interface CollectibleSneakersPageProps {}
 
 interface Row {
-  key: string;
   title: string;
   text: string;
   icon?: ReactNode;
@@ -27,21 +26,18 @@ type RowGroup = Row[];
 
 const rowGroup: RowGroup = [
   {
-    key: "firstRow",
     title: "Nibh viverra",
     text: "Sit bibendum donec dolor fames neque vulputate non sit aliquam. Consequat turpis natoque leo, massa. ",
     icon: <TrophyIcon />,
     rectangleIcon: <RectangleTrophyIcon />,
   },
   {
-    key: "secondRow",
     title: "Cursus amet",
     text: "Sit bibendum donec dolor fames neque vulputate non sit aliquam. Consequat turpis natoque leo, massa. ",
     icon: <TunnelIcon />,
     rectangleIcon: <RectangleTunnelIcon />,
   },
   {
-    key: "thirdRow",
     title: "Ipsum fermentum",
     text: "Sit bibendum donec dolor fames neque vulputate non sit aliquam. Consequat turpis natoque leo, massa. ",
     icon: <TvIcon />,
@@ -67,7 +63,7 @@ const CollectibleSneakersPage: React.FC<
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="flex w-full px-20 py-10 gap-20">
+      <div className="flex w-full px-20 py-10 gap-20 relative">
         <div className="flex flex-col w-[714px] gap-12">
           <div className="font-extrabold text-7xl text-[#0F172A]">
             Collectible Sneakers
@@ -97,12 +93,10 @@ const CollectibleSneakersPage: React.FC<
         </div>
       </div>
       <div className="flex justify-between relative px-20 gap-20 pt-40 pb-24">
-        {rowGroup.map((row: any) => (
-          <div key={row.key} className="flex flex-col gap-2.5">
+        {rowGroup.map((row: any, index: any) => (
+          <div key={index} className="flex flex-col gap-3">
             <div className="relative">
-              <span className="absolute top-0 left-6 transform translate-x-1 -translate-y-1">
-                {row.rectangleIcon}
-              </span>
+              <span className="absolute top-0 left-6">{row.rectangleIcon}</span>
               <span>{row.icon}</span>
             </div>
             <div className="font-medium text-xl">{row.title}</div>
