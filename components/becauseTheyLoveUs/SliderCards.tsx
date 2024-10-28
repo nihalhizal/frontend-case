@@ -15,7 +15,7 @@ const SliderCards = (props: SliderCardsProps) => {
   const { icon, title, text, userImage, userNameSurname, userDetail } = props;
 
   return (
-    <div className="flex flex-col bg-white border-1 rounded-[20px] w-[24rem] h-[420px] shadow-lg shadow-stone-300">
+    <div className="flex flex-col bg-white border-1 rounded-[20px] w-[24rem] h-[420px] shadow-custom-3">
       <div className="flex flex-col gap-8 p-8">
         <div className="flex gap-2 items-center">
           {icon}

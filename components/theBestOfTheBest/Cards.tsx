@@ -13,7 +13,7 @@ const Cards = (props: CardsProps) => {
   const { imageUrl, title, text } = props;
 
   return (
-    <div className="flex flex-col rounded-[.6rem] w-[394px] shadow-2xl shadow-slate-600 bg-blue">
+    <div className="flex flex-col rounded-[.6rem] w-[394px] shadow-custom bg-blue">
       <div className="w-[394px] h-[220px]">
         <img
           src={imageUrl}

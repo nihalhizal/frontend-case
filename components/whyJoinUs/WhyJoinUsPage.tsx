@@ -33,9 +33,9 @@ const WhyJoinUsPage: React.FC<WhyJoinUsPageProps> = ({}) => {
         <DecoVideoSvg />
       </div>
       <div className="p-20">
-        <div className="flex justify-between bg-white p-20 rounded-3xl w-[1280px] h-[496px] shadow-xl shadow-stone-300">
+        <div className="flex justify-between bg-white p-20 rounded-3xl w-[1280px] h-[496px] shadow-custom-2">
           <div className="flex flex-col gap-6">
-            <div className="text-[#0F172A] font-extrabold text-6xl">
+            <div className="text-[#0F172A] font-extrabold text-[56px]">
               Why join us
             </div>
             <div className="flex flex-col gap-2">

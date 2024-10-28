@@ -69,8 +69,8 @@ const GrowYourCollectionPage: React.FC<GrowYourCollectionPageProps> = ({}) => {
         <div className="flex flex-col gap-8 w-[16rem]">
           <Button
             onClick={() => {}}
-            size="medium"
-            className="bg-white shadow-md shadow-stone-300"
+            size="small"
+            className="bg-white shadow-custom-4"
             icon={<SearchIcon />}
             endIcon={<ArrowIcon />}
           >
