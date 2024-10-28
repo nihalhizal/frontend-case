@@ -12,7 +12,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <div>
-      <div className="bg-yellow w-full">
+      <div className="bg-yellow xs:bg-white w-full">
         <Header />
         <CollectibleSneakersPage />
       </div>

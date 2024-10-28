@@ -70,7 +70,9 @@ const WhyJoinUsPage: React.FC<WhyJoinUsPageProps> = ({}) => {
                   className="rounded-b-2xl w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <PlayIcon />
+                  <button>
+                    <PlayIcon />
+                  </button>
                 </div>
               </div>
             </div>
