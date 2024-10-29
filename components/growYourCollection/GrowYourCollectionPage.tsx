@@ -53,7 +53,7 @@ const GrowYourCollectionPage: React.FC<GrowYourCollectionPageProps> = ({}) => {
         <MobileWavesSvg />
       </div>
       <div className="flex flex-col p-20 gap-8 xs:p-4 xs:text-center">
-        <div className="text-blue font-extrabold text-6xl xs:font-bold xs:text-3xl">
+        <div className="txt-large xs:font-bold xs:text-3xl">
           Grow your collection
         </div>
         <div className="text-lg xs:text-base">
