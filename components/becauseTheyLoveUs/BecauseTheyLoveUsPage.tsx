@@ -152,7 +152,7 @@ const BecauseTheyLoveUsPage: React.FC<BecauseTheyLoveUsPageProps> = ({}) => {
         </div>
         <div className="relative">
           <Slider ref={sliderRef} {...sliderSettings}>
-            {sliderCards.map((item: any, index: number) => (
+            {sliderCards.map((item, index) => (
               <div key={index} className="p-10 xs:p-2 xs:pb-20">
                 <SliderCards
                   icon={item.icon}

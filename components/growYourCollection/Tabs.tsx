@@ -39,7 +39,7 @@ const Tabs = () => {
           </div>
         </div>
       </div>
-      <div className="relative pt-48 pl-[680px] xs:pt-40 xs:pl-64">
+      <div className="relative pt-48 pl-[680px] xs:pt-40 xs:pl-72">
         <div className="tab w-[256px] h-[286px] xs:w-[95px] xs:h-[105px]">
           <div className="relative w-full h-full">
             <img

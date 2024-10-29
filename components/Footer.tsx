@@ -32,7 +32,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
           {data?.data?.map(({ title, items }: ColumnsData, index: number) => (
             <div key={index} className="flex flex-col gap-4">
               <div className="font-medium">{title}</div>
-              {items.map((item: any, itemIndex: number) => (
+              {items.map((item, itemIndex) => (
                 <div key={itemIndex}>
                   <div>{item}</div>
                 </div>

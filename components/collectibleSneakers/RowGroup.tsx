@@ -10,16 +10,14 @@ import {
   TvIcon,
 } from "../Icons";
 
-interface Row {
+interface RowGroup {
   title: string;
   text: string;
   icon?: ReactNode;
   rectangleIcon?: ReactNode;
 }
 
-type RowGroup = Row[];
-
-const rowGroup: RowGroup = [
+const rows: RowGroup[] = [
   {
     title: "Nibh viverra",
     text: "Sit bibendum donec dolor fames neque vulputate non sit aliquam. Consequat turpis natoque leo, massa. ",
@@ -43,7 +41,7 @@ const rowGroup: RowGroup = [
 const RowGroup = () => {
   return (
     <div className="flex justify-between relative px-20 gap-20 pt-40 pb-24 xs:flex-col xs:bg-darkYellow xs:p-4 xs:py-20">
-      {rowGroup.map((row: any, index: any) => (
+      {rows.map((row, index) => (
         <div key={index} className="flex flex-col gap-3 xs:items-center">
           <div className="relative">
             <span className="absolute top-0 left-6">{row.rectangleIcon}</span>

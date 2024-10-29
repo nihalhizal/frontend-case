@@ -16,34 +16,17 @@ import Tabs from "./Tabs";
 
 interface GrowYourCollectionPageProps {}
 
-interface List {
+interface ListItem {
   icon: ReactNode;
   text: string;
 }
 
-type ListItem = List[];
-
-const listItem: ListItem = [
-  {
-    icon: <SecurityIcon />,
-    text: "Cras eget",
-  },
-  {
-    icon: <RocketIcon />,
-    text: "Dolor pharetra",
-  },
-  {
-    icon: <MonitorIcon />,
-    text: "Amet, fringilla",
-  },
-  {
-    icon: <SensorIcon />,
-    text: "Amet nibh",
-  },
-  {
-    icon: <SettingsIcon />,
-    text: "Sed velit",
-  },
+const listItems: ListItem[] = [
+  { icon: <SecurityIcon />, text: "Cras eget" },
+  { icon: <RocketIcon />, text: "Dolor pharetra" },
+  { icon: <MonitorIcon />, text: "Amet, fringilla" },
+  { icon: <SensorIcon />, text: "Amet nibh" },
+  { icon: <SettingsIcon />, text: "Sed velit" },
 ];
 
 const GrowYourCollectionPage: React.FC<GrowYourCollectionPageProps> = ({}) => {
@@ -77,7 +60,7 @@ const GrowYourCollectionPage: React.FC<GrowYourCollectionPageProps> = ({}) => {
           >
             <div className="text-xl font-medium">Bibendum tellus</div>
           </Button>
-          {listItem.map((item: any, index: number) => (
+          {listItems.map((item, index) => (
             <div key={index} className="flex items-center gap-4 pl-5 xs:hidden">
               {item.icon}
               <div className="text-xl font-medium">{item.text}</div>

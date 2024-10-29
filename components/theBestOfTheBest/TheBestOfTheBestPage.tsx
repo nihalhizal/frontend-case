@@ -41,7 +41,7 @@ const TheBestOfTheBestPage: React.FC<TheBestOfTheBestPageProps> = ({}) => {
       <div className="pt-28 absolute right-6 xs:hidden">
         <BackLightsSvg />
       </div>
-      <div className="hidden xs:block pt-96 absolute">
+      <div className="hidden xs:block pt-48 left-1 absolute">
         <MobileBackLightsSvg />
       </div>
       <div className="flex w-full justify-between gap-12 pt-20 relative xs:flex-col xs:pt-10">

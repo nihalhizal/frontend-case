@@ -15,7 +15,7 @@ const MainContent = () => {
           suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum ultrices
           amet.
         </div>
-        <div className="flex font-medium text-brown gap-4">
+        <div className="flex font-medium text-brown gap-4 xs:justify-center">
           <Button onClick={() => {}} size="medium" className="btn-signup">
             Sign up now
           </Button>
