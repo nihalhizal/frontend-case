@@ -116,7 +116,7 @@ const BecauseTheyLoveUsPage: React.FC<BecauseTheyLoveUsPageProps> = ({}) => {
           slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: true,
-          centerPadding: "30px",
+          centerPadding: "40px",
         },
       },
     ],
@@ -153,7 +153,7 @@ const BecauseTheyLoveUsPage: React.FC<BecauseTheyLoveUsPageProps> = ({}) => {
         <div className="relative">
           <Slider ref={sliderRef} {...sliderSettings}>
             {sliderCards.map((item, index) => (
-              <div key={index} className="p-10 xs:p-2 xs:pb-20">
+              <div key={index} className="p-10 xs:p-4 xs:pb-20">
                 <SliderCards
                   icon={item.icon}
                   title={item.title}

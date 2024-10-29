@@ -10,7 +10,7 @@ const VideoTab = () => {
         <YellowIcon />
         <GreenIcon />
       </div>
-      <div className="w-[520px] h-[309px] xs:w-[353px] xs:h-[235px]">
+      <div className="w-[520px] h-[309px] xs:w-full xs:h-[235px]">
         <div className="relative w-full h-full">
           <img
             src="/Video.jpeg"

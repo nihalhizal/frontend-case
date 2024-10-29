@@ -24,7 +24,7 @@ const listItems: ListItem[] = [
 const MainContainer = () => {
   return (
     <div className="p-20 xs:p-4">
-      <div className="flex justify-between bg-white p-20 rounded-3xl shadow-custom-2 w-[1280px] h-[496px] xs:flex-col xs:p-4 xs:w-[393px] xs:h-[689px]">
+      <div className="flex justify-between bg-white p-20 rounded-3xl shadow-custom-2 w-[1280px] h-[496px] xs:flex-col xs:p-4 xs:w-full xs:h-[689px]">
         <div className="flex flex-col gap-6 xs:pt-10 xs:gap-2">
           <div className="txt-large xs:text-[32px] xs:text-center">
             Why join us
