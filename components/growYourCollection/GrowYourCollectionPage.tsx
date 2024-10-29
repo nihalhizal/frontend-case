@@ -55,7 +55,7 @@ const GrowYourCollectionPage: React.FC<GrowYourCollectionPageProps> = ({}) => {
         <MobileWavesSvg />
       </div>
       <div className="flex flex-col p-20 gap-8 xs:p-4 xs:text-center">
-        <div className="text-[#0F172A] font-extrabold text-6xl xs:font-bold xs:text-3xl">
+        <div className="text-blue font-extrabold text-6xl xs:font-bold xs:text-3xl">
           Grow your collection
         </div>
         <div className="text-lg xs:text-base">
@@ -87,13 +87,13 @@ const GrowYourCollectionPage: React.FC<GrowYourCollectionPageProps> = ({}) => {
           ))}
         </div>
         <div className="relative">
-          <div className="absolute">
-            <div className="flex gap-1 py-3 pl-3 bg-white rounded-t-2xl shadow-custom-light">
+          <div className="absolute tab">
+            <div className="flex gap-1 py-3 pl-3">
               <RedIcon />
               <YellowIcon />
               <GreenIcon />
             </div>
-            <div className="flex flex-col bg-white border-4 border-white rounded-b-2xl w-[759px] h-[451px] shadow-custom-dark xs:w-[295px] xs:h-[202px]">
+            <div className="w-[759px] h-[451px] xs:w-[295px] xs:h-[202px]">
               <div className="relative w-full h-full">
                 <img
                   src="/TabImage1.jpeg"
@@ -104,23 +104,25 @@ const GrowYourCollectionPage: React.FC<GrowYourCollectionPageProps> = ({}) => {
             </div>
           </div>
           <div className="absolute pt-24 pl-24 xs:pt-14 xs:pl-10">
-            <div className="flex gap-1 py-3 pl-3 bg-white rounded-t-2xl shadow-custom-light">
-              <RedIcon />
-              <YellowIcon />
-              <GreenIcon />
-            </div>
-            <div className="flex flex-col bg-white border-4 border-white rounded-b-2xl w-[759px] h-[451px] shadow-custom-dark xs:w-[295px] xs:h-[202px]">
-              <div className="relative w-full h-full">
-                <img
-                  src="/TabImage2.jpeg"
-                  alt="TabImage2"
-                  className="rounded-b-2xl w-full h-full object-cover"
-                />
+            <div className="tab">
+              <div className="flex gap-1 py-3 pl-3">
+                <RedIcon />
+                <YellowIcon />
+                <GreenIcon />
+              </div>
+              <div className="w-[759px] h-[451px] xs:w-[295px] xs:h-[202px]">
+                <div className="relative w-full h-full">
+                  <img
+                    src="/TabImage2.jpeg"
+                    alt="TabImage2"
+                    className="rounded-b-2xl w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>
           <div className="relative pt-48 pl-[680px] xs:pt-40 xs:pl-64">
-            <div className="flex flex-col bg-white border-4 border-white rounded-2xl w-[256px] h-[286px] shadow-custom-light xs:w-[95px] xs:h-[105px]">
+            <div className="tab w-[256px] h-[286px] xs:w-[95px] xs:h-[105px]">
               <div className="relative w-full h-full">
                 <img
                   src="/TabImage3.jpeg"

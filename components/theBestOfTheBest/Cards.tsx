@@ -22,13 +22,13 @@ const Cards = (props: CardsProps) => {
         />
       </div>
       <div className="flex flex-col gap-6 p-8">
-        <p className="text-2xl font-bold text-[#FFFFFF]">{title}</p>
-        <p className="text-lg text-[#FFFFFF]">{text}</p>
+        <p className="text-2xl font-bold text-white">{title}</p>
+        <p className="text-lg text-white">{text}</p>
         <div className="w-full items-center cursor-pointer">
           <Button
             onClick={() => {}}
             size="medium"
-            className="flex w-full justify-center bg-transparent text-[#FFFFFF] font-medium border-2 border-[#FFFFFF]"
+            className="flex w-full justify-center bg-transparent text-white font-medium border-2 border-white"
             icon={<BuyIcon />}
           >
             Buy Now

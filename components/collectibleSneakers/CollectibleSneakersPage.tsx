@@ -71,7 +71,7 @@ const CollectibleSneakersPage: React.FC<
       </div>
       <div className="flex w-full px-20 py-10 gap-20 relative xs:p-4 xs:text-center">
         <div className="flex flex-col w-[714px] gap-12">
-          <div className="font-extrabold text-7xl text-[#0F172A] xs:text-[56px]">
+          <div className="font-extrabold text-7xl text-blue xs:text-[56px]">
             Collectible Sneakers
           </div>
           <div className="text-lg">
@@ -80,17 +80,13 @@ const CollectibleSneakersPage: React.FC<
             amet.
           </div>
           <div className="flex font-medium text-base text-brown gap-4">
-            <Button
-              onClick={() => {}}
-              size="medium"
-              className="bg-transparent text-[#78350F] border-2 border-[#78350F] hover:text-white hover:bg-[#78350F]"
-            >
+            <Button onClick={() => {}} size="medium" className="btn-signup">
               Sign up now
             </Button>
             <Button
               onClick={() => {}}
               size="medium"
-              className="bg-transparent text-[#78350F]"
+              className="bg-transparent text-brown"
               icon={<VectorIcon />}
             >
               Watch Demo

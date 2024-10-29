@@ -32,7 +32,7 @@ const TheBestOfTheBestPage: React.FC<TheBestOfTheBestPageProps> = ({}) => {
           <Button
             onClick={() => {}}
             size="large"
-            className="bg-transparent text-[#FFFFFF] font-bold border-2 border-[#FFFFFF]"
+            className="bg-transparent text-white font-bold border-2 border-white"
           >
             Sign up now
           </Button>

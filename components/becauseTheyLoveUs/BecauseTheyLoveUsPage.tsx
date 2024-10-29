@@ -125,18 +125,18 @@ const BecauseTheyLoveUsPage: React.FC<BecauseTheyLoveUsPageProps> = ({}) => {
   return (
     <div>
       <div className="flex p-20 justify-between items-center xs:p-4 xs:pt-20 xs:justify-center">
-        <div className="text-[#0F172A] font-extrabold text-6xl xs:font-bold xs:text-3xl">
+        <div className="text-blue font-extrabold text-6xl xs:font-bold xs:text-3xl">
           Because they love us
         </div>
         <div className="flex gap-6 xs:hidden">
           <button
-            className="border-2 rounded-full p-4 border-brown"
+            className="btn-arrow"
             onClick={() => sliderRef.current.slickPrev()}
           >
             <ArrowLeftIcon />
           </button>
           <button
-            className="border-2 rounded-full p-4 border-brown"
+            className="btn-arrow"
             onClick={() => sliderRef.current.slickNext()}
           >
             <ArrowRightIcon />

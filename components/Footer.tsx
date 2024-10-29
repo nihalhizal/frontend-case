@@ -28,7 +28,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
   return (
     <div>
       <div className="flex w-full p-20 xs:p-16">
-        <div className="flex w-full justify-between text-[#E2E8F0] xs:flex-col xs:text-center xs:gap-20">
+        <div className="flex w-full justify-between text-lightBlue xs:flex-col xs:text-center xs:gap-20">
           {data?.data?.map(({ title, items }: ColumnsData, index: number) => (
             <div key={index} className="flex flex-col gap-4">
               <div className="font-medium">{title}</div>
@@ -72,8 +72,8 @@ const Footer: React.FC<FooterProps> = ({}) => {
           </div>
         </div>
       </div>
-      <div className="border-t mx-20 border-[#E2E8F0] opacity-25 xs:mx-4"></div>
-      <div className="flex w-full px-20 py-10 justify-between text-[#E2E8F0] xs:flex-col xs:px-8 xs:py-12 xs:text-center xs:gap-6">
+      <div className="border-t mx-20 border-lightBlue opacity-25 xs:mx-4"></div>
+      <div className="flex w-full px-20 py-10 justify-between text-lightBlue xs:flex-col xs:px-8 xs:py-12 xs:text-center xs:gap-6">
         <div>Collers @ 2023. All rights reserved.</div>
         <div className="flex gap-8 xs:gap-6 xs:justify-center">
           <div>Terms</div>

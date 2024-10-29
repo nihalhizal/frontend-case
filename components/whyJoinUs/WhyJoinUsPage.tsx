@@ -38,7 +38,7 @@ const WhyJoinUsPage: React.FC<WhyJoinUsPageProps> = ({}) => {
       <div className="p-20 xs:p-4">
         <div className="flex justify-between bg-white p-20 rounded-3xl w-[1280px] h-[496px] shadow-custom-2 xs:flex-col xs:p-4 xs:w-[393px] xs:h-[689px]">
           <div className="flex flex-col gap-6 xs:pt-10">
-            <div className="text-[#0F172A] font-extrabold text-[56px] xs:text-[32px] xs:text-center">
+            <div className="text-blue font-extrabold text-[56px] xs:text-[32px] xs:text-center">
               Why join us
             </div>
             <div className="flex flex-col gap-2">
@@ -50,22 +50,18 @@ const WhyJoinUsPage: React.FC<WhyJoinUsPageProps> = ({}) => {
               ))}
             </div>
             <div className="xs:text-center">
-              <Button
-                onClick={() => {}}
-                size="medium"
-                className="bg-transparent text-[#78350F] border-2 border-[#78350F] hover:text-white hover:bg-[#78350F]"
-              >
+              <Button onClick={() => {}} size="medium" className="btn-signup">
                 Sign up now
               </Button>
             </div>
           </div>
-          <div className="relative">
-            <div className="flex gap-1 py-3 pl-3 bg-white rounded-t-2xl shadow-custom-light">
+          <div className="relative tab">
+            <div className="flex gap-1 py-3 pl-3">
               <RedIcon />
               <YellowIcon />
               <GreenIcon />
             </div>
-            <div className="flex flex-col bg-white border-4 border-white rounded-b-2xl w-[520px] h-[309px] shadow-custom-dark xs:w-[361px] xs:h-[235px]">
+            <div className="w-[520px] h-[309px] xs:w-[353px] xs:h-[235px]">
               <div className="relative w-full h-full">
                 <img
                   src="/Video.jpeg"

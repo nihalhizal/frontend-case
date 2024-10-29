@@ -28,11 +28,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
         {data?.data?.map(({ key, label }: ButtonsData) => (
           <button key={key}>{label}</button>
         ))}
-        <Button
-          onClick={() => {}}
-          size="medium"
-          className="bg-transparent text-[#78350F] border-2 border-[#78350F] hover:text-white hover:bg-[#78350F]"
-        >
+        <Button onClick={() => {}} size="medium" className="btn-signup">
           Sign up now
         </Button>
       </div>
