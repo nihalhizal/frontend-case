@@ -26,8 +26,6 @@ const Button: React.FC<ButtonProps> = ({
     if (size === "medium") classes += "btn-medium ";
     if (size === "large") classes += "btn-large ";
 
-    if (disabled) classes += "btn-disabled ";
-
     if (className) classes += `${className} `;
 
     return classes.trim();

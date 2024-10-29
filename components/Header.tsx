@@ -24,7 +24,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
   return (
     <div className="flex w-full px-20 py-6 justify-between xs:p-4">
       <div className="font-bold text-3xl text-brown">Collers</div>
-      <div className="flex font-medium text-base text-brown gap-4 xs:hidden">
+      <div className="flex font-medium text-brown gap-4 xs:hidden">
         {data?.data?.map(({ key, label }: ButtonsData) => (
           <button key={key}>{label}</button>
         ))}
