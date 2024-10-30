@@ -17,6 +17,11 @@ interface ColumnsData {
   items: string[];
 }
 
+const appIcons = [
+  { src: "/AppStore.svg", alt: "AppStore" },
+  { src: "/GooglePlay.svg", alt: "GooglePlay" },
+];
+
 const icons = [
   <YoutubeIcon />,
   <FacebookIcon />,
@@ -34,7 +39,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
   });
 
   return (
-    <div>
+    <footer>
       <div className="flex w-full p-20 xs:p-16">
         <div className="flex w-full justify-between text-lightBlue xs:flex-col xs:text-center xs:gap-20">
           {data?.data?.map(({ title, items }: ColumnsData, index: number) => (
@@ -49,16 +54,13 @@ const Footer: React.FC<FooterProps> = ({}) => {
           ))}
           <div className="flex flex-col gap-4">
             <div className="font-medium">Get the App</div>
-            <div>
-              <button>
-                <img src="/AppStore.svg" alt="AppStore" />
-              </button>
-            </div>
-            <div>
-              <button>
-                <img src="/GooglePlay.svg" alt="GooglePlay" />
-              </button>
-            </div>
+            {appIcons.map((icon, index) => (
+              <div key={index}>
+                <button>
+                  <img src={icon.src} alt={icon.alt} />
+                </button>
+              </div>
+            ))}
             <div className="font-medium">Follow Us</div>
             <div className="flex gap-4 xs:justify-center">
               {icons.map((Icon, index) => (
@@ -80,7 +82,7 @@ const Footer: React.FC<FooterProps> = ({}) => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
