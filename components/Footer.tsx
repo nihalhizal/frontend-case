@@ -17,6 +17,14 @@ interface ColumnsData {
   items: string[];
 }
 
+const icons = [
+  <YoutubeIcon />,
+  <FacebookIcon />,
+  <TwitterIcon />,
+  <InstagramIcon />,
+  <LinkedinIcon />,
+];
+
 const Footer: React.FC<FooterProps> = ({}) => {
   //queries
   const { data } = useQuery({
@@ -53,21 +61,9 @@ const Footer: React.FC<FooterProps> = ({}) => {
             </div>
             <div className="font-medium">Follow Us</div>
             <div className="flex gap-4 xs:justify-center">
-              <button>
-                <YoutubeIcon />
-              </button>
-              <button>
-                <FacebookIcon />
-              </button>
-              <button>
-                <TwitterIcon />
-              </button>
-              <button>
-                <InstagramIcon />
-              </button>
-              <button>
-                <LinkedinIcon />
-              </button>
+              {icons.map((Icon, index) => (
+                <button key={index}>{Icon}</button>
+              ))}
             </div>
           </div>
         </div>
