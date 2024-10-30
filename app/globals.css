@@ -67,4 +67,7 @@ body {
   .btn-arrow {
     @apply border-2 rounded-full p-4 border-brown;
   }
+  .tooltip {
+    @apply absolute left-1/2 transform -translate-x-1/2 top-full w-0 h-0 border-t-8 border-t-lightBlue border-x-8 border-x-transparent;
+  }
 }

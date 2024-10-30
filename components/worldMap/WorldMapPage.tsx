@@ -1,13 +1,14 @@
 "use client";
 
 import React from "react";
+import { LocationSvg } from "../BackgroundSvg";
 
 interface WorldMapPageProps {}
 
 const WorldMapPage: React.FC<WorldMapPageProps> = ({}) => {
   return (
     <div className="pt-20 pb-80 xs:pt-40">
-      <div className="relative pl-52 xs:pl-20 xs:pb-24">
+      <div className="relative pl-52 xs:pl-20">
         <div className="relative tab w-[256px] h-[200px]">
           <div className="w-full h-full">
             <img
@@ -19,9 +20,13 @@ const WorldMapPage: React.FC<WorldMapPageProps> = ({}) => {
         </div>
         <div className="absolute w-[240px] h-16 p-4 rounded bg-lightBlue text-sm -mt-2 ml-2">
           Emma Simpson collected one pair of Cool Shoes.
+          <span className="tooltip"></span>
+        </div>
+        <div className="pt-12 pl-28 opacity-75">
+          <LocationSvg />
         </div>
       </div>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center xs:pt-4">
         <div className="flex flex-col gap-2 relative items-center justify-center">
           <div className="text-white font-extrabold text-8xl xs:text-5xl">
             11,658,467
