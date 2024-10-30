@@ -324,9 +324,9 @@ export const MobileYellowBgSvg: React.FC<
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="425"
+      width="100%"
       height="278"
-      viewBox="0 0 425 278"
+      viewBox="0 0 100% 278"
       fill="none"
     >
       <rect y="0.203613" width="425" height="277" fill="#FDE68A" />
