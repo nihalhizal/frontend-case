@@ -16,7 +16,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
   const { data } = useQuery({
     queryKey: ["buttonsData"],
     queryFn: () =>
-      fetch("http://localhost:3000/api/header-buttons").then((res) =>
+      fetch(`${window.location.origin}/api/header-buttons`).then((res) =>
         res.json()
       ),
   });

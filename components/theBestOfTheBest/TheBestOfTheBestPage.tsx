@@ -19,7 +19,9 @@ const TheBestOfTheBestPage: React.FC<TheBestOfTheBestPageProps> = ({}) => {
   const { data } = useQuery({
     queryKey: ["cardsListData"],
     queryFn: () =>
-      fetch("http://localhost:3000/api/card-list").then((res) => res.json()),
+      fetch(`${window.location.origin}/api/card-list`).then((res) =>
+        res.json()
+      ),
   });
 
   return (

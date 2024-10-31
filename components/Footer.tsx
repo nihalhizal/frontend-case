@@ -35,7 +35,9 @@ const Footer: React.FC<FooterProps> = ({}) => {
   const { data } = useQuery({
     queryKey: ["columnsData"],
     queryFn: () =>
-      fetch("http://localhost:3000/api/footer-items").then((res) => res.json()),
+      fetch(`${window.location.origin}/api/footer-items`).then((res) =>
+        res.json()
+      ),
   });
 
   return (
